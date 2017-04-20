@@ -11,8 +11,6 @@
 (when (memq window-system '(mac ns x))
   (exec-path-from-shell-initialize))
 
-;; (setenv "PATH" (concat (getenv "PATH") ":/Library/TeX/texbin"))
-
 (require 'ox-latex)
 (add-to-list 'org-latex-classes
              '("beamer"
